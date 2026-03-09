@@ -4,6 +4,9 @@
 #include "test.h"
 
 int main() {
+	static_assert(sizeof(TCPacket) == 20);
+	static_assert(sizeof(I4Packet) == 20);
+
     TEST_ASSERT(sizeof(TCPacket) == 20);
     TEST_ASSERT(sizeof(I4Packet) == 20);
 
